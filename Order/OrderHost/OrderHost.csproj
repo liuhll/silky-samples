@@ -6,10 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
-
-    <ItemGroup>
-      <PackageReference Include="Silky.Agent.Host" Version="3.5.2" />
-    </ItemGroup>
+    
 
     <ItemGroup>
       <None Update="appsettings.yaml">
@@ -22,6 +19,10 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Order.Application\Order.Application.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Silky.Agent.Host" Version="3.5.3" />
     </ItemGroup>
 
 </Project>
