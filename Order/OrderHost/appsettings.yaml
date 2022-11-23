@@ -1,0 +1,11 @@
+rpc:
+  token: ypjdYOzNd4FwENJiEARMLWwK0v7QUHPW
+  port: 2200
+ 
+registrycenter:
+  type: Zookeeper
+  connectionStrings: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183;127.0.0.1:2184,127.0.0.1:2185,127.0.0.1:2186
+distributedCache:
+  redis:
+    isEnabled: true
+    configuration: 127.0.0.1:6379,defaultDatabase=0
