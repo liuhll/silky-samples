@@ -1,0 +1,8 @@
+Silky开发的开发环境
+
+1. 开发平台: .net5+;编程语言: C#  
+
+2. 基础服务: 服务注册中心: Zookeeper/Consul/Nacos;分布式缓存:Redis
+
+3. 开发工具:visual studio 2022/Rider ; docker、docker-compose
+

@@ -1,0 +1,29 @@
+1. 通过.net平台 使用C# 编程语言实现的微服务框架
+
+2. 关键能力: (2.1) 远程调用(SilkyRpc框架:底层以dotnetty为通信组件实现的RPC框架->SilkyRpc  (2.2)服务治理(服务之间的远程发现与通信的可靠性、负载均衡、流量调度与监控)
+
+3. 服务注册中心支持: Zookeeper、Consul、Nacos
+
+4. 分布式事务: 支持Tcc分布式事务
+
+5. 结合SkyApm实现链路跟踪
+
+6. 服务健康检查
+
+7. 扩展性(模块化、插件化开发)
+
+8. 缓存拦截
+
+9. 其他(数据访问能力Efocre、对象映射、输入参数校验等)
+
+
+Browser Client  --[Http Request]-->  Gateway  --  [SilkyRpc] --> MsHost1 -- [SilkyRpc]--> MsHost2
+                                      |                   |
+                                      |                   |													  
+								1. MapSilkyRpcServices    1. 接口动态代理--> TCC分布式事务
+								2. Swagger文档			  2. 模板调用(IInvokeTemplate) 
+								
+								
+开原地址: https://github.com/liuhll/silky
+
+
