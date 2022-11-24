@@ -7,7 +7,7 @@ namespace Order.Application.Contracts.Order;
 /// <summary>
 /// 订单服务
 /// </summary>
-[ServiceRoute("v1/api/{appservice=order}")]
+// [ServiceRoute("v1/api/{appservice=order}")]
 public interface IOrderAppService
 {
     // /// <summary>
@@ -26,8 +26,8 @@ public interface IOrderAppService
 
     /// <summary>
     /// 新增/更新接口
-    /// <remarks>Id为时为新增，Id不为空时为更新</remarks>
     /// </summary>
+    /// <remarks>Id为时为新增，Id不为空时为更新</remarks>
     /// <param name="input"></param>
     /// <returns></returns>
     [HttpPost]
@@ -47,7 +47,7 @@ public interface IOrderAppService
     [HttpPost("form")]
     [HttpPut("form")]
     Task<OrderDto> CreateOrUpdateForForm([FromForm]OrderDto input);
-
+    
     /// <summary>
     /// 删除
     /// </summary>
@@ -96,6 +96,14 @@ public interface IOrderAppService
     /// <returns></returns>
     [HttpGet("search")]
     Task<PagedList<OrderDto>> GetPage(GetOrderPageInput input);
-    
 
+    Task<OrderDto> Normal1(string orderNo);
+    
+    Task<OrderDto> Normal2(OrderDto input);
+    
+    [HttpPost]
+    Task<OrderDto> Normal3([FromBody]string orderNo);
+    
+    [HttpGet]
+    Task<OrderDto> Normal4(OrderDto input);
 }

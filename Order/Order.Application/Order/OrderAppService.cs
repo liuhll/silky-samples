@@ -38,6 +38,7 @@ public class OrderAppService : IOrderAppService
     {
         throw new NotImplementedException();
     }
+    
 
     public Task<OrderDto> Delete(long id)
     {
@@ -60,6 +61,26 @@ public class OrderAppService : IOrderAppService
     }
 
     public Task<PagedList<OrderDto>> GetPage(GetOrderPageInput input)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<OrderDto> Normal1(string orderNo)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<OrderDto> Normal2(OrderDto input)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<OrderDto> Normal3(string orderNo)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<OrderDto> Normal4(OrderDto input)
     {
         throw new NotImplementedException();
     }
