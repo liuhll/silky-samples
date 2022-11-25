@@ -7,7 +7,7 @@ namespace Order.Application.Contracts.Order;
 /// <summary>
 /// 订单服务
 /// </summary>
-// [ServiceRoute("v1/api/{appservice=order}")]
+[ServiceRoute("v1/api/{appservice=order}")]
 public interface IOrderAppService
 {
     // /// <summary>

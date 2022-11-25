@@ -5,8 +5,10 @@ rpc:
 registrycenter:
   type: Zookeeper
   connectionStrings: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183;127.0.0.1:2184,127.0.0.1:2185,127.0.0.1:2186
+  scheme: Digest
+  auth: "silky:pass4Word"  
 governance:
-  apiIsRESTfulStyle: false
+  apiIsRESTfulStyle: true
 distributedCache:
   redis:
     isEnabled: true

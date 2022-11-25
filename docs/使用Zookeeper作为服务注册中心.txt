@@ -1,0 +1,29 @@
+使用Zookeeper作为服务注册中心 (发布->订阅  +  心跳的方式)
+
+1. type: Zookeeper
+2. connectionStrings: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183;127.0.0.1:2184,127.0.0.1:2185,127.0.0.1:2186
+3. scheme: World(缺省), 推荐 => Digest
+4. Auth: anyone(缺省),  推荐 => user:password
+
+其他配置项:
+
+ConnectionTimeout、SessionTimeout、OperatingTimeout
+
+EnableHeartBeat
+
+RoutePath
+SwaggerDocPath
+
+命令:
+
+docker exec  -i -t infrastr-silky.zoo1-1 /bin/bash
+
+zkCli.sh
+
+get /silky/server
+
+getAcl /silky/server
+
+addauth digest user:password
+
+
