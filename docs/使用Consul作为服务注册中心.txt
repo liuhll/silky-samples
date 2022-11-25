@@ -1,0 +1,33 @@
+使用Zookeeper作为服务注册中心 (心跳的方式)
+
+1. 安装部署consul服务注册中心: docker 、 docker-compose
+
+2. 配置
+type: consul
+address: consul_client_address
+datacenter: dc1
+waitTime: 00:00:05
+token: xxx
+
+-------------------
+
+RoutePath：
+SwaggerDocPath：
+HeartBeatIntervalSecond：
+
+
+3. 通过环境变量配置
+
+
+4. ACL和Consul TokenToken的设置
+
+consul acl bootstrap
+
+
+https://developer.hashicorp.com/consul/tutorials/security/access-control-setup-production
+
+https://developer.hashicorp.com/consul/tutorials/docker/docker-compose-datacenter
+
+registrycenter:
+  type: Consul
+  address: http://192.168.31.115:8500

@@ -1,11 +1,17 @@
 rpc:
   token: ypjdYOzNd4FwENJiEARMLWwK0v7QUHPW
- 
+
+#registrycenter:
+#  type: Zookeeper
+#  connectionStrings: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183;127.0.0.1:2184,127.0.0.1:2185,127.0.0.1:2186
+#  scheme: Digest
+#  auth: "silky:pass4Word"
+
 registrycenter:
-  type: Zookeeper
-  connectionStrings: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183;127.0.0.1:2184,127.0.0.1:2185,127.0.0.1:2186
-  scheme: Digest
-  auth: "silky:pass4Word"
+  type: Consul
+  address: http://127.0.0.1:8500
+  token: 54ac5279-e0cb-9483-3941-bd471376292a
+
 distributedCache:
   redis:
     isEnabled: true
