@@ -7,10 +7,20 @@ rpc:
 #  scheme: Digest
 #  auth: "silky:pass4Word"
 
+#registrycenter:
+#  type: Consul
+#  address: http://127.0.0.1:8500
+#  token: 54ac5279-e0cb-9483-3941-bd471376292a
+
 registrycenter:
-  type: Consul
-  address: http://127.0.0.1:8500
-  token: 54ac5279-e0cb-9483-3941-bd471376292a
+  type: Nacos
+  namespace: silky
+  serverAddresses:
+    - http://127.0.0.1:8848/
+    - http://127.0.0.1:8849/
+    - http://127.0.0.1:8850/
+  userName: nacos
+  password: nacos
 
 distributedCache:
   redis:
