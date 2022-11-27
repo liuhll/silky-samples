@@ -1,0 +1,8 @@
+1. 安装apollo服务
+2. 安装包 Com.Ctrip.Framework.Apollo.AspNetCoreHosting
+3. 如何解决如何与apollo连接的bug?
+  LogManager.UseConsoleLogging(LogLevel.Trace);
+  127.0.0.1 apollo-configservice
+3. 如何实现对yaml格式的文件解析?  
+ 安装包 Apollo.ConfigAdapter.Yaml;  
+  YamlConfigAdapter.Register();

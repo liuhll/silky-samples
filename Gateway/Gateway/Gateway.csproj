@@ -7,6 +7,8 @@
     </PropertyGroup>
     
     <ItemGroup>
+        <PackageReference Include="Com.Ctrip.Framework.Apollo.AspNetCoreHosting" Version="2.9.0" />
+        <PackageReference Include="Com.Ctrip.Framework.Apollo.ConfigAdapter.Yaml" Version="2.9.0" />
         <PackageReference Include="Silky.Agent.Host" Version="3.5.3" />
     </ItemGroup>
 </Project>

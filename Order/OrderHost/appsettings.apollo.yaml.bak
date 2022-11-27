@@ -1,0 +1,11 @@
+apollo:
+  appId: "silky.order.host"
+  cluster: default
+  secret: "a11cff71bc8e41859339d411059b1f16"
+  namespaces:
+    - application
+    - silky.samples.common.yaml
+  env: Dev
+  meta:
+    DEV: "http://127.0.0.1:8080/"
+    
