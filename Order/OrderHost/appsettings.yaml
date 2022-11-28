@@ -1,0 +1,15 @@
+nacosConfig:
+  listeners:
+    - optional: false
+      dataId: silky.sample.nacos.common
+      group: DEFAULT_GROUP
+    - optional: false
+      dataId: silky.order.host
+      group: DEFAULT_GROUP
+  namespace: silky_config
+  serverAddresses:
+    - http://127.0.0.1:8848/
+    - http://127.0.0.1:8849/
+    - http://127.0.0.1:8850/
+  userName: nacos
+  password: nacos

@@ -1,0 +1,27 @@
+1. 安装nacosSDK
+    <PackageReference Include="nacos-sdk-csharp.Extensions.Configuration" Version="1.3.4" />
+    <PackageReference Include="nacos-sdk-csharp.YamlParser" Version="1.3.4" />
+
+2. 添加扩展方法
+hostBuilder.UseNacosConfig(section: "NacosConfig", Nacos.YamlParser.YamlConfigurationStringParser.Instance)
+
+3. nacos新增并发布配置
+
+4. 配置文件
+
+nacosConfig:
+  listeners:
+    - optional: false
+      dataId: silky.sample.nacos.common
+      group: DEFAULT_GROUP
+    - optional: false
+      dataId: silky.order.host
+      group: DEFAULT_GROUP
+  namespace: silky_config
+  serverAddresses:
+    - http://127.0.0.1:8848/
+    - http://127.0.0.1:8849/
+    - http://127.0.0.1:8850/
+  userName: nacos
+  password: nacos
+  

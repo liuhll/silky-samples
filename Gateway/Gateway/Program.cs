@@ -1,8 +1,9 @@
-using Com.Ctrip.Framework.Apollo.ConfigAdapter;
 using Gateway;
 
-YamlConfigAdapter.Register();
+// YamlConfigAdapter.Register();
 var hostBuilder = Host.CreateDefaultBuilder()
-    .ConfigureSilkyGatewayDefaults(webHostBuilder => webHostBuilder.UseStartup<Startup>())
-    .AddApollo();
+        .ConfigureSilkyGatewayDefaults(webHostBuilder => webHostBuilder.UseStartup<Startup>())
+        .UseNacosConfig("NacosConfig", Nacos.YamlParser.YamlConfigurationStringParser.Instance)
+    // .AddApollo()
+    ;
 await hostBuilder.Build().RunAsync();

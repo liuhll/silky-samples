@@ -7,13 +7,13 @@
       "applicationUrl": "https://localhost:7160;http://localhost:5023",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "DOTNET_ENVIRONMENT": "Development",
-        "Apollo:Meta:DEV": "http://127.0.0.1:8080/",
-        "Apollo:Secret": "a11cff71bc8e41859339d411059b1f16",
-        "Apollo:AppId": "silky.gateway.host",
-        "Apollo:Cluster": "default",
-        "Apollo:Evn": "Dev",
-        "Apollo:Namespaces:0": "silky.samples.common.yaml"
+        "DOTNET_ENVIRONMENT": "Development"
+//        "Apollo:Meta:DEV": "http://127.0.0.1:8080/",
+//        "Apollo:Secret": "a11cff71bc8e41859339d411059b1f16",
+//        "Apollo:AppId": "silky.gateway.host",
+//        "Apollo:Cluster": "default",
+//        "Apollo:Evn": "Dev",
+//        "Apollo:Namespaces:0": "silky.samples.common.yaml"
 
       }
     }
